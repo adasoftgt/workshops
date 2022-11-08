@@ -3,4 +3,14 @@
 view and practice create solutions for remenber
 
 
+Thanks to: [Pelon Nerd](https://github.com/pablokbs)
+
+## List the files up to now:
+
+
+
+- Varius
+  - 01 -> [Nginx-Proxy-Manager](./various/01)
+
+
 
