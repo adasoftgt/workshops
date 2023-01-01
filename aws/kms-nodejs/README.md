@@ -150,6 +150,44 @@ En este caso vamos a utilizar, `symmetric`, para este ejemplo
 ## Luego click en `finish`
 
 
+## ahora se podran dar cuenta que ya esta la llave
+
+![image](https://user-images.githubusercontent.com/47198640/210184079-7e669478-484c-4cbf-91ad-827da3eb7730.png)
+
+
+al ingresar a la llave en busca de ARN
+
+![image](https://user-images.githubusercontent.com/47198640/210184105-018a6899-f0f3-4e6f-b8ec-2e385d662657.png)
+
+Este ARN es el que nos va servir, para poder utilizar el `symmetric`
+
+
+dentro de:
+
+```
+kms-nodejs->routes->kms->kms.js
+```
+
+alli se encotrara lo siguiente
+
+```
+function encrypt(buffer,app) {
+    const kms = new aws.KMS(app.config.aws.credentials);
+    return new Promise((resolve, reject) => {
+        const params = {
+            KeyId: '<ARN LLAVE AWS>', // The identifier of the CMK to use for encryption. You can use the key ID or Amazon Resource Name (ARN) of the CMK, or the name or ARN of an alias that refers to the CMK.
+            Plaintext: buffer// The data to encrypt.
+        };
+        kms.encrypt(params, (err, data) => {
+            if (err) {
+                reject(err);
+            } else {
+                resolve(data.CiphertextBlob);
+            }
+        });
+    });
+}
+```
 
 
 
