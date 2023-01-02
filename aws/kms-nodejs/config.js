@@ -11,7 +11,7 @@ const config ={
         credentials:{
             accessKeyId: process.env.AWS_ACCESS_KEY_ID, //credentials for your IAM user
             secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY, //credentials for your IAM user
-            region: process.env.AWS_DEFAULT_REGION
+            region: process.env.AWS_REGION
         }
     }
 };
