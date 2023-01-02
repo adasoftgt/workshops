@@ -198,6 +198,52 @@ AWS_REGION=<region>
 KMS_KEYID=<arn kms>
 ```
 
+# como probar
+
+## clonar repositorio
+
+```
+git clone https://github.com/adasoftgt/workshops.git
+```
+
+## desplazarce hacia
+
+```
+cd aws/kms-nodejs
+```
+## instalar dependencias
+
+```
+npm install
+```
+
+## iniciar servidor
+
+```
+npm start
+```
+
+## 
+
+```
+localhost:4015/encrypt/<texto>
+```
+## return
+
+![image](https://user-images.githubusercontent.com/47198640/210275467-bc708574-5b13-4955-9e9a-379520f8a0bc.png)
+
+
+Dar click en `decrypt` para ver la funcionalidad 
+
+
+referencias
+
+https://attacomsian.com/blog/nodejs-encode-decode-url#:~:text=URL%20Encoding%201%20encodeURI%20Method%20The%20encodeURI%20%28%29,built-in%20querystring%20module%20to%20encode%20a%20URL.%20
+
+https://medium.com/hackernoon/managing-encryption-keys-with-aws-kms-in-node-js-c320c860019a
+
+https://attacomsian.com/blog/nodejs-base64-encode-decode
+
 
 
 
