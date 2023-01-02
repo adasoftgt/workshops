@@ -4,13 +4,26 @@ var AWS = require('aws-sdk');
 const { base64encode, base64decode } = require('nodejs-base64');
 module.exports = (express, app) => {
 
-    app.get('/encrypt', upload.any(), async function (req, res) {
-        encrypt(Buffer.from('hola3','utf-8')).then((CiphertextBlob) =>{
+    app.get('/encrypt/:plaintext', upload.any(), async function (req, res) {
+        encrypt(Buffer.from(req.params.plaintext,'utf-8')).then((CiphertextBlob) =>{
             var saveBD = CiphertextBlob.toString('base64')
-            return res.status(200).json({
+            /*return res.status(200).json({
                 base64: saveBD,
                 base64forurl:encodeURIComponent(saveBD)
-            })
+            })*/
+            return res.status(200).send(`
+                <!DOCTYPE html>
+                <html>
+                <body>
+                
+                <h1>Cifrado base64</h1>
+                ${saveBD}
+                <h1>Cifrado base64forurl codificado para url click hire</h1>
+                <a href="http://localhost:4015/decrypt/${encodeURIComponent(saveBD)}">ver plaintext</a>
+                
+                </body>
+                </html>
+            `)
         }).catch((err) => {
             return res.status(500).send(err)
         })
@@ -20,7 +33,6 @@ module.exports = (express, app) => {
 
     app.get('/decrypt/:cipherbase64blob', upload.any(), async function (req, res) {
         var cipherbase64blob = decodeURIComponent(req.params.cipherbase64blob)
-        //console.log(Buffer.from('AQICAHiN7dsNQfvF8OeqhaPL4hS+jNC1RnAO6PXvxBnK9aU4vQF+QBfKT13KHTrktgGhewf+AAAAYzBhBgkqhkiG9w0BBwagVDBSAgEAME0GCSqGSIb3DQEHATAeBglghkgBZQMEAS4wEQQMG2Z1AYnppxshRbj9AgEQgCC6M4IbjPOeEMGJiEq/ELCrnTiNF+58yeQUVftC1f8KtQ==','base64'))
         decrypt(Buffer.from(cipherbase64blob,'base64')).then((Plaintext) =>{
             return res.status(200).send(Plaintext.toString('utf-8'))
         }).catch((err) => {
