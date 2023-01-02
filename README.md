@@ -10,9 +10,11 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
 
 
 - Varius
+  - [nodejs-collaboration](./various/nodejs-collaboration)
   - [Nginx-Proxy-Manager](./various/nginx-proxy-manager)
+  - 
 - aws
-  - [kms-nodejs](./aws/kms-nodejs)
+  - [kms-symmetric-nodejs](./aws/kms-symmetric-nodejs)
  
 
 
