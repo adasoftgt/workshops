@@ -165,7 +165,7 @@ Este ARN es el que nos va servir, para poder utilizar el `symmetric`
 dentro de:
 
 ```
-kms-nodejs->routes->kms->kms.js
+kms-nodejs->routes->kms->kms-symmetric.js
 ```
 
 alli se encotrara lo siguiente
@@ -187,6 +187,15 @@ function encrypt(buffer,app) {
         });
     });
 }
+```
+
+# variables de entorno
+
+```
+AWS_ACCESS_KEY_ID=<key public user>
+AWS_SECRET_ACCESS_KEY=<key private user>
+AWS_REGION=<region>
+KMS_KEYID=<arn kms>
 ```
 
 
