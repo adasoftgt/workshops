@@ -10,7 +10,10 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
 
 
 - Varius
-  - 01 -> [Nginx-Proxy-Manager](./various/01)
+  - [Nginx-Proxy-Manager](./various/nginx-proxy-manager)
+- aws
+  - [kms-nodejs](./aws/kms-nodejs)
+ 
 
 
 
