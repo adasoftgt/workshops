@@ -19,7 +19,7 @@ module.exports = (express, app) => {
                 <h1>Cifrado base64</h1>
                 ${saveBD}
                 <h1>Cifrado base64forurl codificado para url click hire</h1>
-                <a href="http://localhost:4015/decrypt/${encodeURIComponent(saveBD)}">ver plaintext</a>
+                <a href="http://localhost:4015/decrypt/${encodeURIComponent(saveBD)}">Decrypt</a>
                 
                 </body>
                 </html>
