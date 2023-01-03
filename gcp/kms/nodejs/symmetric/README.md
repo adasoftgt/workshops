@@ -125,3 +125,11 @@ localhost:4015/encrypt/<texto>
 ```
 
 Dar click en `decrypt` para ver la funcionalidad 
+
+# referencias
+
+https://cloud.google.com/kms/docs/encrypt-decrypt?hl=es-419
+
+https://cloud.google.com/docs/authentication/application-default-credentials
+
+
