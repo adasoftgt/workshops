@@ -17,15 +17,18 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
   - 
 - aws
   - kms
-    - [nodejs-symmetric](./aws/kms/nodejs/symmetric)
-      - this implementation is to configure aws kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
+    - nodejs 
+      - [symmetric](./aws/kms/nodejs/symmetric)
+        - this implementation is to configure aws kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
   - translate
     - [nodejs](./aws/translate/nodejs)
     - [python](./aws/translate/python)
     
  
 - gcp
-  - [kms-nodejs-symmetric](./gcp/kms/nodejs/symmetric)
-    - this implementation is to configure gcp kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
+  - kms
+    - nodejs 
+      - [symmetric](./gcp/kms/nodejs/symmetric)
+        - this implementation is to configure gcp kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
 
 
