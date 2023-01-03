@@ -93,13 +93,35 @@ projects/<id proyecto google>/locations/<location || global>/keyRings/<nombre de
 
 
 
-# Encripta datos
+# como probar
 
-## obtner keyrings_id
-`copiar el nombre de recurso` eso el `keyRingId`
-
-
+## clonar repositorio
 
 ```
-npm i fast-crc32c
+git clone https://github.com/adasoftgt/workshops.git
 ```
+
+## desplazarce hacia
+
+```
+cd aws/gcp/kms/symmetric-nodejs
+```
+## instalar dependencias
+
+```
+npm install
+```
+
+## iniciar servidor
+
+```
+npm start
+```
+
+## 
+
+```
+localhost:4015/encrypt/<texto>
+```
+
+Dar click en `decrypt` para ver la funcionalidad 
