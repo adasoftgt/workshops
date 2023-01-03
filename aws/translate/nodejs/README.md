@@ -20,6 +20,33 @@ https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html
 
 ## Como Probar
 
+## clonar repositorio
+
+```
+git clone https://github.com/adasoftgt/workshops.git
+```
+
+## desplazarce hacia
+
+```
+cd aws/kms-nodejs
+```
+## instalar dependencias
+
+```
+npm install
+```
+
+## iniciar servidor
+
+```
+npm start
+```
+
+## ingresar esta url
+verificar la lista idiomas que puede traducir aws translate
+https://docs.aws.amazon.com/translate/latest/dg/what-is-languages.html 
+y elegir el source y target que se necesiten
 ```
 http://localhost:4015/translate/<source>/<targer>/<texto a truducir>
 ```
