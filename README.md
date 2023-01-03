@@ -16,7 +16,7 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
     - this implementation is to configurate domain with SSL type R3 letencrypt, wooooo that's great option, exposed by [Pelon Nerd](https://github.com/pablokbs) in youtube
   - 
 - aws
-  - [kms-symmetric-nodejs](./aws/kms-symmetric-nodejs)
+  - [kms-symmetric-nodejs](./aws/kms/symmetric-nodejs)
     - this implementation is to configure aws kms(key manager service) symmetric encrypt and deencrypt in nodejs, it's super interesting
  
 
