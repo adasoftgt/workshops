@@ -20,7 +20,7 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
     - this implementation is to configure aws kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
  
 - gcp
-  - [gcp-nodejs-symmetric](./gcp/kms/nodejs/symmetric)
+  - [kms-nodejs-symmetric](./gcp/kms/nodejs/symmetric)
     - this implementation is to configure gcp kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
 
 
