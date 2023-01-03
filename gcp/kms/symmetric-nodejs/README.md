@@ -66,9 +66,9 @@ Haz clic en Crear.
 [google cloud dns service account](./GOOGLE-CLOUD-DNS.MD#cloud-dns-google)
 
 ### roles
-Administrador de Cloud KMS
-Desencriptador de CryptoKeys de Cloud KMS
-Encriptador de CryptoKeys de Cloud KMS
+- Administrador de Cloud KMS
+- Desencriptador de CryptoKeys de Cloud KMS
+- Encriptador de CryptoKeys de Cloud KMS
 
 
 variables de entorno 
