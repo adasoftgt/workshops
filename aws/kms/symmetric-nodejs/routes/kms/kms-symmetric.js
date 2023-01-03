@@ -7,10 +7,6 @@ module.exports = (express, app) => {
     app.get('/encrypt/:plaintext', upload.any(), async function (req, res) {
         encrypt(Buffer.from(req.params.plaintext,'utf-8')).then((CiphertextBlob) =>{
             var saveBD = CiphertextBlob.toString('base64')
-            /*return res.status(200).json({
-                base64: saveBD,
-                base64forurl:encodeURIComponent(saveBD)
-            })*/
             return res.status(200).send(`
                 <!DOCTYPE html>
                 <html>
