@@ -11,10 +11,13 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
 
 - Varius
   - [nodejs-collaboration](./various/nodejs-collaboration)
+    - this implementation is to create with glob routes for collaborative work with your team, to create an API REST
   - [Nginx-Proxy-Manager](./various/nginx-proxy-manager)
+    - this implementation is to configurate domain with SSL type R3 letencrypt, wooooo that's great option, exposed by [Pelon Nerd](https://github.com/pablokbs) in youtube
   - 
 - aws
   - [kms-symmetric-nodejs](./aws/kms-symmetric-nodejs)
+    - this implementation is to configure aws kms(key manager service) symmetric encrypt and deencrypt in nodejs, it's super interesting
  
 
 
