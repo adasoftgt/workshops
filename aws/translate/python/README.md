@@ -65,3 +65,4 @@ Se vera la traduccion del ejemplo
 - [crear entornos virtuales](https://www.youtube.com/watch?v=TNtrAvNNxTY)
 - [variables de entorno python](https://www.youtube.com/watch?v=E0Ys_ntvshY)
 - [documentacion de boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/guide/credentials.html#:~:text=Boto3%20will%20check%20these%20environment%20variables%20for%20credentials%3A,only%20needed%20when%20you%20are%20using%20temporary%20credentials.)
+- [amazon-translate-python-nodejs](https://www.fernandomc.com/posts/amazon-translate-python-nodejs/)
