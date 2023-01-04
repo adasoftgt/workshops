@@ -14,17 +14,24 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
     - this implementation is to create with glob routes for collaborative work with your team, to create an API REST
   - [Nginx-Proxy-Manager](./various/nginx-proxy-manager)
     - this implementation is to configurate domain with SSL type R3 letencrypt, wooooo that's great option, exposed by [Pelon Nerd](https://github.com/pablokbs) in youtube
-  - 
+
+![image](https://user-images.githubusercontent.com/47198640/210457540-983b51ff-3899-4bde-bbe2-eded50157ad9.png)
+
 - aws
   - kms
-    - [nodejs-symmetric](./aws/kms/nodejs/symmetric)
-      - this implementation is to configure aws kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
+    - nodejs 
+      - [symmetric](./aws/kms/nodejs/symmetric)
+        - this implementation is to configure aws kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
   - translate
     - [nodejs](./aws/translate/nodejs)
+    - [python](./aws/translate/python)
     
- 
+ ![image](https://user-images.githubusercontent.com/47198640/210457627-fa65e6f3-b5e9-4920-86a8-24431ec4b9bb.png)
+
 - gcp
-  - [kms-nodejs-symmetric](./gcp/kms/nodejs/symmetric)
-    - this implementation is to configure gcp kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
+  - kms
+    - nodejs 
+      - [symmetric](./gcp/kms/nodejs/symmetric)
+        - this implementation is to configure gcp kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
 
 
