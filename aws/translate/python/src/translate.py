@@ -1,5 +1,6 @@
 import boto3
 
+
 translate = boto3.client('translate')
 
 result = translate.translate_text(
