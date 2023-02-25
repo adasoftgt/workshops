@@ -15,6 +15,18 @@ python -m pip install virtualenvwrapper-win
 python -m virtualenv -p python3 env
 ```
 
+### Activar entorno
+
+```
+.\env\Scripts\activate
+```
+
+### salir del entorno
+
+```
+deactivate
+```
+
 Si tienes problemas par ejecutar activate en VS
 
 ### abrir powerShell como adminsitrador
