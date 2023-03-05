@@ -1,0 +1,13 @@
+version: '3.9'
+
+services:
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1433:1433"
+    volumes:
+      - ./.data:/var/opt/mssql/data
+      - ./archivos:/var/opt/mssql/archivos
+    environment:
+      SA_PASSWORD: "MyP@55w0rd"
+      ACCEPT_EULA: "Y"

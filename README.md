@@ -33,5 +33,7 @@ Thanks to: [Pelon Nerd](https://github.com/pablokbs)
     - nodejs 
       - [symmetric](./gcp/kms/nodejs/symmetric)
         - this implementation is to configure gcp kms(key manager service) symmetric encrypt and decrypt in nodejs, it's super interesting
+  - [sqlserver](./gcp/sqlserver)
+    - this implementation is to confgiure gpc contenedor sqlserver  
 
 
