@@ -11,3 +11,22 @@ services:
     environment:
       SA_PASSWORD: "MyP@55w0rd"
       ACCEPT_EULA: "Y"
+  db-oracle:
+    image: container-registry.oracle.com/database/standard:latest
+    restart: always
+    environment:
+      - ORACLE_PWD=MyP@55w0rd
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    volumes:
+      - ./db-data-oracle:/ORCL
+   db-mysql:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: MyP@55w0rd
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db-data-mysql:/var/lib/mysql
