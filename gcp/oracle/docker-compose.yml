@@ -1,0 +1,12 @@
+version: '3.9'
+services:
+  db:
+    image: container-registry.oracle.com/database/standard:latest
+    restart: always
+    environment:
+      - ORACLE_PWD=MyP@55w0rd
+    ports:
+      - "1521:1521"
+      - "5500:5500"
+    volumes:
+      - ./db-data:/ORCL
