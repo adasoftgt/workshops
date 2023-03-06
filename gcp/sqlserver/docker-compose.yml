@@ -14,10 +14,10 @@ services:
   db-oracle:
     image: wnameless/oracle-xe-11g-r2
     restart: always
-#   environment:
+   environment:
 #      - ORACLE_ALLOW_REMOTE=true
 #      - ORACLE_DISABLE_ASYNCH_IO=true
-#      - ORACLE_PASSWORD=MyP@55w0rd
+      - ORACLE_PASSWORD=MyP@55w0rd
     ports:
       - "1521:1521"
     volumes:
