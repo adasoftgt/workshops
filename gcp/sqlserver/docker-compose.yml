@@ -12,7 +12,7 @@ services:
       SA_PASSWORD: "MyP@55w0rd"
       ACCEPT_EULA: "Y"
   db-oracle:
-    image: oracleinanutshell/oracle-xe-11g
+    image: wnameless/oracle-xe-11g-r2
     restart: always
 #   environment:
 #      - ORACLE_ALLOW_REMOTE=true
