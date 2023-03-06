@@ -13,7 +13,6 @@ services:
       ACCEPT_EULA: "Y"
   db-oracle:
     image: thebookpeople/oracle-xe-11g
-    command: ["chmod", "777", "-R", "/u01/app/oracle"]
     restart: always
     environment:
       - ORACLE_ALLOW_REMOTE=true
@@ -26,7 +25,6 @@ services:
       - ./db-data-oracle:/u01/app/oracle
   db-mysql:
     image: mysql
-    command: ["chmod", "777", "-R", "/var/lib/mysql"]
     restart: always
     environment:
       - MYSQL_ROOT_PASSWORD=MyP@55w0rd
