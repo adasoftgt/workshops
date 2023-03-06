@@ -14,14 +14,15 @@ services:
   db-oracle:
     image: thebookpeople/oracle-xe-11g
     restart: always
-#    environment:
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
 #      - ORACLE_ALLOW_REMOTE=true
 #      - ORACLE_DISABLE_ASYNCH_IO=true
 #      - ORACLE_PASSWORD=MyP@55w0rd
     ports:
       - "1521:1521"
     volumes:
-      - ./db-data-oracle:/u01/app/oracle/oradata/XE
+      - ./db-data-oracle:/u01/app/oracle
   db-mysql:
     image: mysql
     restart: always
