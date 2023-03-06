@@ -21,7 +21,7 @@ services:
       - "5500:5500"
     volumes:
       - ./db-data-oracle:/ORCL
-   db-mysql:
+  db-mysql:
     image: mysql
     restart: always
     environment:
