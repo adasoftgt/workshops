@@ -15,8 +15,8 @@ services:
     image: oracleinanutshell/oracle-xe-11g
     restart: always
     environment:
-      - ORACLE_ALLOW_REMOTE=true
-      - ORACLE_DISABLE_ASYNCH_IO=true
+#      - ORACLE_ALLOW_REMOTE=true
+#      - ORACLE_DISABLE_ASYNCH_IO=true
       - ORACLE_PASSWORD=MyP@55w0rd
     ports:
       - "1521:1521"
