@@ -12,20 +12,21 @@ services:
       SA_PASSWORD: "MyP@55w0rd"
       ACCEPT_EULA: "Y"
   db-oracle:
-    image: container-registry.oracle.com/database/standard:latest
+    image: oracleinanutshell/oracle-xe-11g
     restart: always
     environment:
-      - ORACLE_PWD=MyP@55w0rd
+      - ORACLE_ALLOW_REMOTE=true
+      - ORACLE_DISABLE_ASYNCH_IO=true
+      - ORACLE_PASSWORD=MyP@55w0rd
     ports:
       - "1521:1521"
-      - "5500:5500"
     volumes:
-      - ./db-data-oracle:/ORCL
+      - ./db-data-oracle:/u01/app/oracle/oradata/XE
   db-mysql:
     image: mysql
     restart: always
     environment:
-      MYSQL_ROOT_PASSWORD: MyP@55w0rd
+      - MYSQL_ROOT_PASSWORD=MyP@55w0rd
     ports:
       - "3306:3306"
     volumes:
