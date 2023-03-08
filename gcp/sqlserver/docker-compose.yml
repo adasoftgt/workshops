@@ -12,18 +12,6 @@ services:
       SA_PASSWORD: "MyP@55w0rd"
       ACCEPT_EULA: "Y"
 #docker run --name=OracleXE --shm-size=1g -p 1521:1521 -p 8080:8080 -e ORACLE_PWD=MyP@55w0rd -v db-data-oracle:/opt/oracle/oradata thebookpeople/oracle-xe-11g
-#   db-oracle:
-#     image: thebookpeople/oracle-xe-11g
-#     restart: always
-#     environment:
-#       - ORACLE_ALLOW_REMOTE=true
-# #      - ORACLE_ALLOW_REMOTE=true
-# #      - ORACLE_DISABLE_ASYNCH_IO=true
-# #      - ORACLE_PASSWORD=MyP@55w0rd
-#     ports:
-#       - "1521:1521"
-#     volumes:
-#       - ./db-data-oracle:/u01/app/oracle
   db-mysql:
     image: mysql
     restart: always
