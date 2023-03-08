@@ -11,6 +11,16 @@ services:
     environment:
       SA_PASSWORD: "MyP@55w0rd"
       ACCEPT_EULA: "Y"
+  db:
+    image: mcr.microsoft.com/mssql/server:2019-latest
+    ports:
+      - "1434:1434"
+    volumes:
+      - ./.data:/var/opt/mssql/data
+      - ./archivos:/var/opt/mssql/archivos
+    environment:
+      SA_PASSWORD: "MyP@55w0rd"
+      ACCEPT_EULA: "Y"
 #docker run --name=OracleXE --shm-size=1g -p 1521:1521 -p 8080:8080 -e ORACLE_PWD=MyP@55w0rd -v db-data-oracle:/opt/oracle/oradata thebookpeople/oracle-xe-11g
   db-mysql:
     image: mysql
