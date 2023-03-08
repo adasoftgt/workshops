@@ -15,7 +15,7 @@ services:
     image: mcr.microsoft.com/mssql/server:2019-latest
     container_name: db2
     ports:
-      - "1434:1434"
+      - "1433:1434"
     volumes:
       - ./.data2:/var/opt/mssql/data
     environment:
